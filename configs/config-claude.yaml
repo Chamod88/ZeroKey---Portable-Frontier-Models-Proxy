@@ -1,0 +1,65 @@
+config-version: 8
+
+server:
+  host: "127.0.0.1"
+  port: 8317
+
+management:
+  allow-remote: false
+  secret-key: "$2a$10$1pa0cp6Vq2/vxKhbcaP9ZesbPCnELlxbEjg8WhjVXtiaMkh6yupS."
+
+access:
+  api-keys:
+    - "sk-gemini-proxy-key"
+
+routing:
+  strategy: "round-robin"
+  session-affinity: false
+  retry:
+    request-retry: 3
+    max-retry-interval: 30
+
+observability:
+  logs:
+    debug: false
+    logging-to-file: false
+    request-log: false
+
+requests:
+  payload:
+    filter:
+      - models:
+          - name: "*"
+            protocol: "antigravity"
+        params:
+          - "request.systemInstruction"
+          - "systemInstruction"
+
+oauth:
+  auth-dir: "./auth/claude"
+  model-alias:
+    antigravity:
+      - name: "gemini-3-flash"
+        alias: "gemini-3-flash"
+        fork: true
+      - name: "gemini-3-flash"
+        alias: "gemini-3.8-flash-high"
+        fork: true
+      - name: "gemini-3-flash"
+        alias: "claude-3-5-sonnet-20241022"
+        fork: true
+      - name: "gemini-3-flash"
+        alias: "claude-3-7-sonnet-20250219"
+        fork: true
+      - name: "gemini-3-flash"
+        alias: "claude-sonnet-4-6"
+        fork: true
+      - name: "gemini-3-flash"
+        alias: "claude-sonnet-4-5"
+        fork: true
+      - name: "gemini-3-flash"
+        alias: "claude-3-5-haiku-20241022"
+        fork: true
+      - name: "gemini-3-flash"
+        alias: "claude-3-opus-20240229"
+        fork: true

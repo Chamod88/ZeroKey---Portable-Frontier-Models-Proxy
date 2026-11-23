@@ -1,0 +1,16 @@
+[package]
+name = "proxy"
+version = "1.0.0"
+edition = "2021"
+description = "Fast, zero-overhead CLI manager for Google Gemini AI proxies (Claude Code & Codex)"
+authors = ["Chamod <chamo8893@gmail.com>"]
+
+[dependencies]
+# Zero external crates. Pure Rust std only.
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true

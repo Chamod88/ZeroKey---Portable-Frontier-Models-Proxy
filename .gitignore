@@ -1,0 +1,21 @@
+# Personal OAuth Tokens & Credentials - NEVER COMMIT
+auth/
+*.json
+*.token
+*.jwt
+*.key
+
+# Logs & Runtime State
+logs/
+*.log
+
+# Rust build target
+target/
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+bin/cli-proxy-api.exe
