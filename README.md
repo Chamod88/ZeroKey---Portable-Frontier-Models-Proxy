@@ -1,4 +1,4 @@
-# Gemini Agent Proxy 🚀
+#  Portable Zero-Key Frontier Models Proxy🦀
 
 Route **Claude Code CLI** and **OpenAI Codex CLI** directly through your **Google Gemini** account (Gemini Pro / Free quota) with **zero paid API keys, zero rate-limit 429 cooling downs, and sub-millisecond local proxy latency**.
 
