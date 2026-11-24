@@ -102,7 +102,7 @@ fn status() {
     };
     println!(
         "  {:<10} {:<6} {:<15} {}",
-        "claude", CLAUDE_PORT, claude_state, "Google Gemini 3 Flash"
+        "claude", CLAUDE_PORT, claude_state, "Gemini 3.8 Flash (High Reasoning)"
     );
 
     // 3. Codex CLI
@@ -117,7 +117,7 @@ fn status() {
     };
     println!(
         "  {:<10} {:<6} {:<15} {}",
-        "codex", CODEX_PORT, codex_state, "Google Gemini 3 Flash"
+        "codex", CODEX_PORT, codex_state, "Gemini 3.8 Flash (High Reasoning)"
     );
 
     println!("  ================================================================\n");

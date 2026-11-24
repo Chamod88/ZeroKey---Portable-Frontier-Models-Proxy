@@ -39,36 +39,39 @@ oauth:
   auth-dir: "./auth/codex"
   model-alias:
     antigravity:
-      - name: "gemini-3-flash"
-        alias: "gemini-3-flash"
-        fork: true
-      - name: "gemini-3-flash"
+      - name: "gemini-3.8-flash-high"
         alias: "gemini-3.8-flash-high"
         fork: true
-      - name: "gemini-3-flash"
+      - name: "gemini-3.8-flash-high"
+        alias: "gemini-3.8-flash"
+        fork: true
+      - name: "gemini-3.8-flash-high"
         alias: "gemini-3.8-flash-tiered"
         fork: true
-      - name: "gemini-3-flash"
+      - name: "gemini-3.8-flash-high"
+        alias: "gemini-3-flash"
+        fork: true
+      - name: "gemini-3.8-flash-high"
         alias: "gpt-4o"
         fork: true
-      - name: "gemini-3-flash"
+      - name: "gemini-3.8-flash-high"
         alias: "gpt-4o-mini"
         fork: true
-      - name: "gemini-3-flash"
+      - name: "gemini-3.8-flash-high"
         alias: "o3-mini"
         fork: true
-      - name: "gemini-3-flash"
+      - name: "gemini-3.8-flash-high"
         alias: "o1"
         fork: true
-      - name: "gemini-3-flash"
+      - name: "gemini-3.8-flash-high"
         alias: "o1-mini"
         fork: true
-      - name: "gemini-3-flash"
+      - name: "gemini-3.8-flash-high"
         alias: "gpt-4.1"
         fork: true
-      - name: "gemini-3-flash"
+      - name: "gemini-3.8-flash-high"
         alias: "gpt-4.5-preview"
         fork: true
-      - name: "gemini-3-flash"
+      - name: "gemini-3.8-flash-high"
         alias: "gpt-5-codex"
         fork: true

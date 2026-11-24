@@ -39,27 +39,30 @@ oauth:
   auth-dir: "./auth/claude"
   model-alias:
     antigravity:
-      - name: "gemini-3-flash"
-        alias: "gemini-3-flash"
-        fork: true
-      - name: "gemini-3-flash"
+      - name: "gemini-3.8-flash-high"
         alias: "gemini-3.8-flash-high"
         fork: true
-      - name: "gemini-3-flash"
+      - name: "gemini-3.8-flash-high"
+        alias: "gemini-3.8-flash"
+        fork: true
+      - name: "gemini-3.8-flash-high"
+        alias: "gemini-3-flash"
+        fork: true
+      - name: "gemini-3.8-flash-high"
         alias: "claude-3-5-sonnet-20241022"
         fork: true
-      - name: "gemini-3-flash"
+      - name: "gemini-3.8-flash-high"
         alias: "claude-3-7-sonnet-20250219"
         fork: true
-      - name: "gemini-3-flash"
+      - name: "gemini-3.8-flash-high"
         alias: "claude-sonnet-4-6"
         fork: true
-      - name: "gemini-3-flash"
+      - name: "gemini-3.8-flash-high"
         alias: "claude-sonnet-4-5"
         fork: true
-      - name: "gemini-3-flash"
+      - name: "gemini-3.8-flash-high"
         alias: "claude-3-5-haiku-20241022"
         fork: true
-      - name: "gemini-3-flash"
+      - name: "gemini-3.8-flash-high"
         alias: "claude-3-opus-20240229"
         fork: true

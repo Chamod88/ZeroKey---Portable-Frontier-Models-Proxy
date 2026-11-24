@@ -2,6 +2,7 @@
 setlocal
 echo ===================================================
 echo   Configuring Claude Code & OpenAI Codex CLI
+echo   Default Model: Gemini 3.8 Flash (High Reasoning)
 echo ===================================================
 
 echo [1/2] Setting User Environment Variables for Claude Code...
@@ -15,9 +16,10 @@ setx OPENAI_API_KEY "sk-gemini-proxy-key" >nul
 
 if not exist "%USERPROFILE%\.codex" mkdir "%USERPROFILE%\.codex"
 (
-echo model = "gpt-4o"
+echo model = "gemini-3.8-flash-high"
 echo model_provider = "gemini_proxy"
 echo openai_base_url = "http://127.0.0.1:8318/v1"
+echo model_reasoning_effort = "high"
 echo.
 echo [model_providers.gemini_proxy]
 echo name = "gemini_proxy"
@@ -30,6 +32,7 @@ echo requires_openai_auth = true
 echo.
 echo ===================================================
 echo   Configuration Complete!
+echo   Default: Gemini 3.8 Flash (High Reasoning)
 echo   Restart your open terminal windows to apply.
 echo ===================================================
 pause
